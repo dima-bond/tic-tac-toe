@@ -2,7 +2,8 @@
   box-sizing: border-box;
   position: relative;
   display: grid;
-  gap: 5px;
+  justify-content: space-between;
+  gap: 6px;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   width: 500px;
   height: 500px;

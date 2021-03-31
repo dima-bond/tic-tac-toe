@@ -75,7 +75,7 @@ function Game() {
   return (
     <div className="container">
       {showWelcome && (
-        <Welcome 
+        <Welcome
           handleStart={handleStart}
           handleInput={handleInput}
           firstPlayer={playerNameQuery.playerOne}
