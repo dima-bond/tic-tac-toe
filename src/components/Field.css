@@ -1,0 +1,52 @@
+.field {
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  gap: 5px;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  width: 500px;
+  height: 500px;
+  background-color: rgb(168,85,193);
+}
+
+.winner {
+  position: absolute;
+  height: 11px;
+  width: 500px;
+  background-color: rgb(175,61,56);
+  border-radius: 5px;
+}
+
+.zero::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 75%;
+  border: 10px solid rgb(196,196,196);
+  border-radius: 50%;
+}
+
+.cross::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 75%;
+  height: 10px;
+  background-color: rgb(196,196,196);
+}
+.cross::after{
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  height: 10px;
+  background-color: rgb(196,196,196);
+}

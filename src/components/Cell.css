@@ -1,0 +1,10 @@
+.cell {
+  position: relative;
+  background-color: rgb(68,66,94);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cell:hover {
+  filter: brightness(80%)
+}

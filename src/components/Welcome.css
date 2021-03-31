@@ -1,0 +1,26 @@
+.welcome__container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+
+.welcome {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(27, 183, 189);
+  border-radius: 10px;
+  z-index: 4;
+}
